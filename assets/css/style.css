@@ -1,0 +1,48 @@
+/* assets/css/style.css */
+
+/* Estilo geral para o corpo */
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+/* Estilo para o container principal, garantindo margens laterais */
+.container {
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* Estilo para a classe que risca a tarefa concluída */
+.task-done {
+    text-decoration: line-through;
+    color: #6c757d !important; /* Cor mais sutil para itens concluídos */
+    opacity: 0.8;
+}
+
+/* Estilo para cards de tarefas */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Estilo para a área do gráfico */
+#taskChart {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Query para responsividade em telas menores */
+@media (max-width: 768px) {
+    .row.g-3 {
+        /* Garante que os campos de filtro fiquem empilhados em telas pequenas */
+        flex-direction: column;
+    }
+    .col-md-3 {
+        width: 100%;
+    }
+    .btn-group {
+        margin-top: 5px;
+    }
+}
